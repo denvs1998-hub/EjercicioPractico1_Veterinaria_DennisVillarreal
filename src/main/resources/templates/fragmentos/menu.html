@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body>
+        <nav th:fragment="menu" class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <div class="navbar-nav">
+
+                    <a class="nav-link"
+                       th:href="@{/tipoServicio/listado}">
+                        Tipos de Servicio
+                    </a>
+
+                    <a class="nav-link"
+                       th:href="@{/servicio/listado}">
+                        Servicios Veterinarios
+                    </a>
+
+                    <a class="nav-link"
+                       th:href="@{/cita/listado}">
+                        Citas Veterinarias
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
